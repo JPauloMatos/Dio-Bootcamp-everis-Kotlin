@@ -16,21 +16,6 @@ fun main() {
     funcionarios.sortedBy { it.salario }.forEach { println(it) }
 
     println("_______________")
-        funcionarios.groupBy { it.tipoContratacao }.forEach{ println(it)}
+    funcionarios.groupBy { it.tipoContratacao }.forEach{ println(it)}
 
-    println("_______________")
-
-
-}
-
-data class Funcionario(
-    val nome: String,
-    val salario: Double,
-    val tipoContratacao: String
-) {
-    override fun toString(): String =
-        """
-            Nome: $nome
-            Salario: $salario
-        """.trimIndent()
 }
